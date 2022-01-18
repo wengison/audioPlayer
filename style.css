@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+/* global color */
+.header {
+    background-color: black;
+    /* -moz-box-shadow: 0px 3px 3px rgb(236, 236, 236); */
+    
+    width: 100%;
+    height: 70px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    /* border-top:orange solid 3px; */
+    border-bottom:orange solid 2px;
+    position: fixed;
+    top:0;
+    z-index: 100;
+   
+}
+
+/* .header-index {
+    border-bottom:orange 1px;
+} */
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    font-family: Roboto;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a:hover {
+    transition: .25s;
+    color: orange;
+}
+
+#current-link {
+    color: orange;
+    text-decoration: orange;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    background: url(spacehorse.jpg);
+    background-size: 66px;
+    background-position-x: -16px;
+    background-position-y: -10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.logo-text {
+    color: white;
+    font-size: .7em;
+    letter-spacing: 1px;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+.login:hover {
+    cursor: pointer;
+    scale: 100%;
+}
+/*---midOne---*/
+
+ .midOne {
+     width: 100%;
+     height: 85vh;
+     display: flex;
+     /* background-color: rgb(100, 100, 100); */
+     align-items: center;
+     background-image: linear-gradient(rgb(0,0,0, 0.5), rgb(0,0,0, 0.65)), url(spaceforhorses4.jpg);
+     background-size:  99%;
+     background-position: center;
+     color: white;
+     margin-top: 78px;
+ }
+ .white-border {
+     width: 100%;
+     height: 8px;
+     background-color: rgb(255, 255, 255);
+     border: pick solid 3px;
+     position: absolute;
+     margin-top: -8px;
+     -webkit-box-shadow: 0 4px 6px -6px rgb(255, 255, 255);
+    -moz-box-shadow: 0 4px 6px -6px rgb(255, 255, 255);
+    box-shadow: 0 4px 6px -6px rgb(255, 255, 255);
+ }
+
+ .midOne .barOne {
+     display: flex;
+     width: 300px;
+     height: 600px;
+     border: solid black 1px;
+     margin: 0 10px;
+     border-radius: 7.5px;
+    /* background-color: rgb(42, 42, 42); */
+    background: linear-gradient(rgb(0,0,0, 0.525), rgb(0,0,0, 0.6));
+ }
+
+ .midOne .barOne ul {
+     width: 100%;
+     height: 100%;
+     justify-self: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     /* margin-left: 2%; */
+ }
+
+ .midOne .barOne ul li a {
+     color: grey;
+ }
+
+ .midOne {
+    display: flex;
+    justify-content: center;
+ }
+
+ .midOne .barTwo {
+     margin: 0 10px;
+     width: 700px;
+     height: 600px;
+     border: solid 1px black;
+     border-radius: 7.5px;
+     /* background-color: rgb(42, 42, 42); */
+     background: linear-gradient(rgb(0,0,0, 0.75), rgb(0,0,0, 0.75));
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .midOne .barTwo {
+    display: flexbox;
+    position: relative;
+ }
+
+ .midOne .barTwo ul .playOne {
+     width: 550px;
+     height: 350px;
+     border: solid rgb(233, 233, 233) 1px;
+     border-radius: 7px;
+     /* background-color: linear-gradient(rgb(0,0,0, 0.99), rgb(0,0,0, 0.99)); */
+     /* background-color: rgb(8, 8, 8); */
+     background: linear-gradient(rgb(0,0,0, 0.1), rgb(0,0,0, 0.12)), url(musicgif3.gif);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     opacity: .9;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: .5s;
+ }
+
+ .stopOne {
+    width: 550px;
+     height: 350px;
+     border: solid rgb(233, 233, 233) 1px;
+     border-radius: 7px;
+     /* background-color: linear-gradient(rgb(0,0,0, 0.99), rgb(0,0,0, 0.99)); */
+     /* background-color: rgb(8, 8, 8); */
+     background: linear-gradient(rgb(0,0,0, 0.1), rgb(0,0,0, 0.12)), url(musicgif2.gif);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     opacity: .9;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ .fa-play-circle {
+    font-size: 5em;
+    color: white;
+    opacity:.75;
+ }
+
+ .fa-play-circle:hover {
+    opacity: 1;
+    cursor: pointer;
+ }
+
+ .song-name {
+     position: absolute;
+     font-size: 2em;
+     top: 15;
+ }
+ .band-name {
+     position: absolute;
+     top: 55;
+ }
+
+.fa-pause-circle {
+    font-size: 5em;
+    color: white;
+    opacity: .75;
+    transition: .1s;
+}
+.fa-pause-circle:hover {
+    opacity: 1;
+    cursor: pointer;
+ }
+ /* .fa-step-forward {
+     font-size: 2em;
+     color: white;
+     padding-inline: 10px;
+     opacity: .9;
+ }
+ .fa-step-backward {
+    font-size: 2em;
+    color: white;
+    padding-inline: 10px;
+    opacity: .9;
+}
+.fa-step-forward:hover,.fa-step-backward:hover {
+    opacity: 1;
+} */
+ 
+ .wtf {
+     color: white;
+     font-weight: 500;
+ }
+ #a {
+     width: 90%;
+     height: 30px;
+     margin-top: 15px;
+     border: solid orange 1px;
+     background-color: orange;
+     border-radius: 5px;
+     position: absolute;
+     bottom: 25;
+ }
+ 
+ .songos {
+     width: 30px;
+     height: 30px;
+     cursor: pointer;
+     background-color: rgb(20, 20, 20);
+     border-radius: 6px;
+     border: solid orange 2px;
+     color: whitesmoke;
+     font-weight: 500;
+ }
+ 
+ .songos:hover {
+    color: orange;
+ }
+ .song {
+     height: 10%;
+     list-style: none;
+     display: flex;
+     align-items: center;
+    padding-inline: 12.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+ }
+ .song:hover {
+     background-color: rgb(24, 24, 24);
+     
+ }
+
+ .song-clicked {
+    background-color: rgb(24, 24, 24);
+ }
+
+ .current-song-number {
+     color: orange;
+ }
+
+
+ /* ---midTwo */
+
+ .barOne-copyright{
+     height: 2vh;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     background-color: black;
+     border-bottom: solid orange 2px;
+ }
+
+ .barOne-copyright {
+     font-size: 10px;
+     color: whitesmoke;
+ }
